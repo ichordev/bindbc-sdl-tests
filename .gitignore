@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/bindbc-sdl-tests
+bindbc-sdl-tests.so
+bindbc-sdl-tests.dylib
+bindbc-sdl-tests.dll
+bindbc-sdl-tests.a
+bindbc-sdl-tests.lib
+bindbc-sdl-tests-test-*
+*.exe
+*.o
+*.obj
+*.lst
+mixins.txt
+bin/
