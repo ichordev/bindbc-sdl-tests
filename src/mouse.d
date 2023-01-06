@@ -178,6 +178,9 @@ loop(void *arg)
 					active.isRect = isRect;
 				}
 				break;
+			case SDLK_ESCAPE:
+				done = SDL_TRUE;
+				return;
 			default: break;
 			}
 			break;

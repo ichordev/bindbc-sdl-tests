@@ -38,21 +38,21 @@ echo \# bin/streamingS
 bin/streamingS
 echo \# bin/streamingSBC
 bin/streamingSBC
-echo # bin/shape res/shapes/p11_shape32alpha.bmp
+echo \# bin/shape res/shapes/p11_shape32alpha.bmp
 bin/shape res/shapes/p11_shape32alpha.bmp
-echo # bin/shape res/shapes/p08_shape32alpha.bmp
+echo \# bin/shape res/shapes/p08_shape32alpha.bmp
 bin/shape res/shapes/p08_shape32alpha.bmp
-echo # bin/shapeBC res/shapes/p11_shape32alpha.bmp
+echo \# bin/shapeBC res/shapes/p11_shape32alpha.bmp
 bin/shapeBC res/shapes/p11_shape32alpha.bmp
-echo # bin/shapeBC res/shapes/p08_shape32alpha.bmp
+echo \# bin/shapeBC res/shapes/p08_shape32alpha.bmp
 bin/shapeBC res/shapes/p08_shape32alpha.bmp
-echo # bin/shapeS res/shapes/p11_shape32alpha.bmp
+echo \# bin/shapeS res/shapes/p11_shape32alpha.bmp
 bin/shapeS res/shapes/p11_shape32alpha.bmp
-echo # bin/shapeS res/shapes/p08_shape32alpha.bmp
+echo \# bin/shapeS res/shapes/p08_shape32alpha.bmp
 bin/shapeS res/shapes/p08_shape32alpha.bmp
-echo # bin/shapeSBC res/shapes/p11_shape32alpha.bmp
+echo \# bin/shapeSBC res/shapes/p11_shape32alpha.bmp
 bin/shapeSBC res/shapes/p11_shape32alpha.bmp
-echo # bin/shapeSBC res/shapes/p08_shape32alpha.bmp
+echo \# bin/shapeSBC res/shapes/p08_shape32alpha.bmp
 bin/shapeSBC res/shapes/p08_shape32alpha.bmp
 echo \# bin/customcursor
 bin/customcursor
@@ -70,13 +70,13 @@ echo \# bin/boundsS
 bin/boundsS
 echo \# bin/boundsSBC
 bin/boundsSBC
-echo # bin/loadso /usr/local/lib/libSDL2.so SDL_Init
+echo \# bin/loadso /usr/local/lib/libSDL2.so SDL_Init
 bin/loadso /usr/local/lib/libSDL2.so SDL_Init
-echo # bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
+echo \# bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
 bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
-echo # bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
+echo \# bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
 bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
-echo # bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
+echo \# bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
 bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
 echo \# bin/relative
 bin/relative
@@ -126,6 +126,22 @@ echo \# bin/scaleS
 bin/scaleS
 echo \# bin/scaleSBC
 bin/scaleSBC
+echo \# bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+echo \# bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+echo \# bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+echo \# bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+echo \# bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+echo \# bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+echo \# bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+echo \# bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
 echo \# bin/audiocapture
 bin/audiocapture
 echo \# bin/audiocaptureBC
