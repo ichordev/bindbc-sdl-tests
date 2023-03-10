@@ -315,7 +315,7 @@ int main(int argc, char **argv)
 
 		case RENDER_UNICODE:
 		{
-			Uint16 *unicode_text = SDL_iconv_utf8_ucs2(message);
+			ushort *unicode_text = SDL_iconv_utf8_ucs2(message);
 			switch (rendermethod) {
 			case TextRenderSolid:
 				text = TTF_RenderUNICODE_Solid(font, unicode_text, *forecol);
