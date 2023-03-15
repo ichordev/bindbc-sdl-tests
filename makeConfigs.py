@@ -44,7 +44,7 @@ print(json.dumps(configs))
 
 with open('buildAllTests.sh', 'w') as f:
 	for config in configs:
-		f.write(f'dub build --config={config["name"]}\n')
+		f.write(f'dub build --config={config["name"]} $1\n')
 
 TEST_PARAMS_LISTS = {
 	'shape': ['res/shapes/p11_shape32alpha.bmp', 'res/shapes/p08_shape32alpha.bmp'],
