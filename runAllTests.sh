@@ -110,14 +110,34 @@ echo \# bin/localeS
 bin/localeS
 echo \# bin/localeSBC
 bin/localeSBC
-echo \# bin/loadso /usr/local/lib/libSDL2.so SDL_Init
-bin/loadso /usr/local/lib/libSDL2.so SDL_Init
-echo \# bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
-bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
-echo \# bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
-bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
-echo \# bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
-bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/loadso /opt/homebrew/lib/libSDL2.dylib SDL_Init
+	bin/loadso /opt/homebrew/lib/libSDL2.dylib SDL_Init
+else
+	echo \# bin/loadso /usr/local/lib/libSDL2.so SDL_Init
+	bin/loadso /usr/local/lib/libSDL2.so SDL_Init
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/loadsoBC /opt/homebrew/lib/libSDL2.dylib SDL_Init
+	bin/loadsoBC /opt/homebrew/lib/libSDL2.dylib SDL_Init
+else
+	echo \# bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
+	bin/loadsoBC /usr/local/lib/libSDL2.so SDL_Init
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/loadsoS /opt/homebrew/lib/libSDL2.dylib SDL_Init
+	bin/loadsoS /opt/homebrew/lib/libSDL2.dylib SDL_Init
+else
+	echo \# bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
+	bin/loadsoS /usr/local/lib/libSDL2.so SDL_Init
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/loadsoSBC /opt/homebrew/lib/libSDL2.dylib SDL_Init
+	bin/loadsoSBC /opt/homebrew/lib/libSDL2.dylib SDL_Init
+else
+	echo \# bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
+	bin/loadsoSBC /usr/local/lib/libSDL2.so SDL_Init
+fi
 echo \# bin/viewport
 bin/viewport
 echo \# bin/viewportBC

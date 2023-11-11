@@ -16,3 +16,7 @@ bindbc-sdl-tests-test-*
 mixins.txt
 bin/
 .directory
+dscanner.ini
+*.kate-swp
+.directory
+.DS_Store
