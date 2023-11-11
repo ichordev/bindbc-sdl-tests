@@ -46,8 +46,14 @@ with open('buildAllTests.sh', 'w') as f:
 
 TEST_PARAMS_LISTS = {
 	'shape': ['res/shapes/p11_shape32alpha.bmp', 'res/shapes/p08_shape32alpha.bmp'],
-	'loadso': {'"darwin"*': ['/opt/homebrew/lib/libSDL2.dylib SDL_Init'], 'else': ['/usr/local/lib/libSDL2.so SDL_Init']},
-	'showfont': ['-solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf', '-shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'],
+	'loadso': {
+		'"darwin"*': ['/opt/homebrew/lib/libSDL2.dylib SDL_Init'],
+		'else': ['/usr/local/lib/libSDL2.so SDL_Init'],
+	},
+	'showfont': {
+		'"darwin"*': ['-solid /System/Library/Fonts/Monaco.ttf', '-shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf'],
+		'else': ['-solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf', '-shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'],
+	},
 }
 TEST_IGNORE_LIST = ['chat','chatd','playmus']
 

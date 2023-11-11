@@ -70,22 +70,50 @@ echo \# bin/streamingS
 bin/streamingS
 echo \# bin/streamingSBC
 bin/streamingSBC
-echo \# bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-echo \# bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-echo \# bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-echo \# bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-echo \# bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-echo \# bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-echo \# bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
-echo \# bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
-bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/showfont -solid /System/Library/Fonts/Monaco.ttf
+	bin/showfont -solid /System/Library/Fonts/Monaco.ttf
+	echo \# bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+	bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+else
+	echo \# bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	bin/showfont -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	echo \# bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+	bin/showfont -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/showfontBC -solid /System/Library/Fonts/Monaco.ttf
+	bin/showfontBC -solid /System/Library/Fonts/Monaco.ttf
+	echo \# bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+	bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+else
+	echo \# bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	bin/showfontBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	echo \# bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+	bin/showfontBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/showfontS -solid /System/Library/Fonts/Monaco.ttf
+	bin/showfontS -solid /System/Library/Fonts/Monaco.ttf
+	echo \# bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+	bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+else
+	echo \# bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	bin/showfontS -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	echo \# bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+	bin/showfontS -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	echo \# bin/showfontSBC -solid /System/Library/Fonts/Monaco.ttf
+	bin/showfontSBC -solid /System/Library/Fonts/Monaco.ttf
+	echo \# bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+	bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /System/Library/Fonts/NewYork.ttf
+else
+	echo \# bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	bin/showfontSBC -solid /usr/share/fonts/truetype/hack/Hack-Bold.ttf
+	echo \# bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+	bin/showfontSBC -shaded -outline 2 -fgcol 255,0,255,255 /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+fi
 echo \# bin/scale
 bin/scale
 echo \# bin/scaleBC
